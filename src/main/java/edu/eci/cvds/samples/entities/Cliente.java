@@ -16,28 +16,28 @@ public class Cliente implements Serializable{
     private String telefono;
     private String direccion;
     private String email;
-    private boolean vetado;
-    private ArrayList<ItemRentado> rentados; 
+        private boolean vetado;
+        private ArrayList<ItemRentado> rentados;
 
     public Cliente() {
-    }
+        }
 
-    public Cliente(String nombre, long documento, String telefono, String direccion, String email, boolean vetado, ArrayList<ItemRentado> rentados) {   
-        this.nombre = nombre;
-        this.documento = documento;
-        this.telefono = telefono;
-        this.direccion = direccion;
-        this.email = email;
-        this.vetado = vetado;
-        this.rentados = rentados;
-    }
+    public Cliente(String nombre, long documento, String telefono, String direccion, String email, boolean vetado, ArrayList<ItemRentado> rentados) {
+            this.nombre = nombre;
+            this.documento = documento;
+            this.telefono = telefono;
+            this.direccion = direccion;
+            this.email = email;
+            this.vetado = vetado;
+            this.rentados = rentados;
+        }
 
-  
+
     public Cliente(String nombre, long documento, String telefono, String direccion, String email) {
-        this.nombre = nombre;
-        this.documento = documento;
-        this.telefono = telefono;
-        this.direccion = direccion;
+            this.nombre = nombre;
+            this.documento = documento;
+            this.telefono = telefono;
+            this.direccion = direccion;
         this.email = email;
         this.vetado = false;
         this.rentados = new ArrayList<>();
